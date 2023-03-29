@@ -8,11 +8,18 @@ module.exports = {
       red_hat: ['Red Hat Text', 'sans-serif'],
       cabin: ['Cabin', 'sans-serif;'],
       lato: ['Lato', 'sans-serif'],
+      nunito: ['Nunito', ' sans-serif'],
     },
 
     colors: {
       primary_green: '#07A081',
       text_black: '#404146',
+      primary_black: '#333333',
+      text_white: '#FFFFFF',
+      red: '#FF3C3C',
+      grey: '#545454',
+      grey2: '#F6F6F6',
+      grey3: '#828282',
     },
 
     screen: {

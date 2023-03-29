@@ -1,19 +1,28 @@
-// import {
-//   people01,
-//   people02,
-//   people03,
-//   facebook,
-//   instagram,
-//   linkedin,
-//   twitter,
-//   airbnb,
-//   binance,
-//   coinbase,
-//   dropbox,
-//   send,
-//   shield,
-//   star,
-// } from '../assets';
+import cat from '../pets assets/cat-kitten.svg';
+import bird from '../pets assets/bird-clip-art-bird-with-blue-tail-png-clipart-picture-09b78ff2108688df949b88a9f47ecc3f.svg';
+import dog from '../pets assets/dog-collar-cat-shock-collar-dog-training-dog-cartoon-75ca853ba992e1ee1b0d4aa568de102b.svg';
+import fish from '../pets assets/goldfish-stock-photography-tropical-fish-feeder-fish-fish-91f8582020595a6b52baad2f24ea666c.svg';
+import rabbit from '../pets assets/domestic-rabbit-hare-clip-art-gray-rabbit-png-image-4b7ba6602f0a6eeec6b7af5461744f78 1.svg';
+
+import cat1 from '../pets assets/cat.svg';
+import cat3 from '../pets assets/cat face.svg';
+import cat4 from '../pets assets/white cate.svg';
+import bird2 from '../pets assets/birg.svg';
+import fish2 from '../pets assets/fish.svg';
+import rabbit2 from '../pets assets/Rabbit.svg';
+import rabbit3 from '../pets assets/Rabbit 2.svg';
+
+import dog1 from '../pets assets/dog.svg';
+
+import facebook from '../pets assets/facebook.svg';
+import twitter from '../pets assets/twitter.svg';
+import youtube from '../pets assets/youtube.svg';
+import instagram from '../pets assets/instagram.svg';
+
+import truck from '../pets assets/truck.svg';
+import truck2 from '../pets assets/truck2.svg';
+import lock from '../pets assets/lock.svg';
+import buttons from '../pets assets/buttons.svg';
 
 export const navLinks = [
   {
@@ -42,6 +51,133 @@ export const navLinks = [
   },
 ];
 
+export const images = [
+  {
+    id: '1',
+    img: cat,
+    title: 'Cat',
+  },
+  {
+    id: '2',
+    img: bird,
+    title: 'Bird',
+  },
+  {
+    id: '3',
+    img: dog,
+    title: 'Dog',
+  },
+  {
+    id: '4',
+    img: fish,
+    title: 'Fish',
+  },
+  {
+    id: '5',
+    img: rabbit,
+    title: 'Rabbit',
+  },
+];
+
+export const cards = [
+  {
+    id: '1',
+    img: dog1,
+    name: 'Lucky 2',
+    description: 'Male non-sporting dog',
+    price: '$269 insead of $300',
+  },
+  {
+    id: '2',
+    img: cat1,
+    name: 'Lucky 5',
+    description: 'Male Young Tabby (mixed)',
+    price: '$269 instead of $300',
+  },
+  {
+    id: '3',
+    img: cat3,
+    name: 'Lucky 5',
+    description: 'Male Young Tabby (mixed)',
+    price: '$269 instead of $300',
+  },
+  {
+    id: '4',
+    img: cat4,
+    name: 'Lucky 5',
+    description: 'Male Young Tabby (mixed)',
+    price: '$269 instead of $300',
+  },
+  {
+    id: '5',
+    img: bird2,
+    name: 'Lucky 5',
+    description: 'Male love bird (mixed)',
+    price: '$269 instead of $300',
+  },
+  {
+    id: '6',
+    img: fish2,
+    name: 'Lucky 2',
+    description: 'Zebra danio aquarium  Fish',
+    price: '$269 instead of $300',
+  },
+  {
+    id: '7',
+    img: rabbit2,
+    name: 'Lucky 5',
+    description: 'Male Young Tabby (mixed)',
+    price: '$269 instead of $300',
+  },
+  {
+    id: '8',
+    img: rabbit3,
+    name: 'Lucky 5',
+    description: 'Male Young Tabby (mixed)',
+    price: '$269 instead of $300',
+  },
+];
+
+export const social = [
+  {
+    id: '1',
+    name: facebook,
+    title: 'Facebook',
+  },
+  {
+    id: '2',
+    name: twitter,
+    title: 'Twitter',
+  },
+  {
+    id: '3',
+    name: youtube,
+    title: 'YouTube',
+  },
+  {
+    id: '4',
+    name: instagram,
+    title: 'Instagram',
+  },
+];
+
+export const services = [
+  {
+    id: '1',
+    name: truck,
+    service: 'Free Same-Day Delivery',
+  },
+  {
+    id: '2',
+    name: lock,
+    service: '100% Secure Checkout',
+  },
+  {
+    id: '3',
+    name: truck2,
+    service: 'Easy 7 days replacement',
+  },
+];
 // export const features = [
 //   {
 //     id: 'feature-1',
@@ -113,64 +249,48 @@ export const stats = [
 
 export const footerLinks = [
   {
-    title: 'Useful Links',
+    title: 'About',
     links: [
       {
-        name: 'Content',
+        name: 'Contact Us',
         link: 'https://www.hoobank.com/content/',
       },
       {
-        name: 'How it Works',
+        name: 'Privacy Policy',
         link: 'https://www.hoobank.com/how-it-works/',
       },
       {
-        name: 'Create',
+        name: 'Terms & Conditions',
         link: 'https://www.hoobank.com/create/',
-      },
-      {
-        name: 'Explore',
-        link: 'https://www.hoobank.com/explore/',
-      },
-      {
-        name: 'Terms & Services',
-        link: 'https://www.hoobank.com/terms-and-services/',
       },
     ],
   },
   {
-    title: 'Community',
+    title: 'support',
     links: [
       {
-        name: 'Help Center',
+        name: 'Shopping info',
         link: 'https://www.hoobank.com/help-center/',
       },
       {
-        name: 'Partners',
+        name: 'Track Order',
         link: 'https://www.hoobank.com/partners/',
       },
       {
-        name: 'Suggestions',
+        name: 'Help/FAQ',
         link: 'https://www.hoobank.com/suggestions/',
-      },
-      {
-        name: 'Blog',
-        link: 'https://www.hoobank.com/blog/',
-      },
-      {
-        name: 'Newsletters',
-        link: 'https://www.hoobank.com/newsletters/',
       },
     ],
   },
   {
-    title: 'Partner',
+    title: 'Contact us',
     links: [
       {
-        name: 'Our Partner',
+        name: 'Call Us : 0123 456 78 00',
         link: 'https://www.hoobank.com/our-partner/',
       },
       {
-        name: 'Become a Partner',
+        name: 'Email Us: ghorerbazarbd.com@gmail.com',
         link: 'https://www.hoobank.com/become-a-partner/',
       },
     ],

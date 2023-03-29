@@ -3,13 +3,16 @@ import cart from '../pets assets/cart.svg';
 import login from '../pets assets/login.svg';
 import menu from '../pets assets/Hamburger menu.svg';
 import logo from '../pets assets/logo.svg';
+import close from '../pets assets/close.svg';
 
 import { navLinks } from '../constants';
 import search from '../pets assets/seach.svg';
 function Navbar() {
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className={`flex justify-between w-full px-2 py-2 relative`}>
+    <nav
+      className={`flex justify-between w-full px-2 py-8 relative border-b-[1px] border-b-primary_green `}
+    >
       <div className=" flex  justify-start items-center ">
         <img
           src={logo}
@@ -19,7 +22,7 @@ function Navbar() {
         <h4 className=" text-[16px] ml-4 font-normal font-cabin">PucciMart</h4>
       </div>
 
-      <ul className=" flex-1 justify-center items-center md:flex hidden ">
+      <ul className=" flex-1 justify-center items-center lg:flex hidden ">
         {navLinks.map((nav) => (
           <li className=" mr-4 font-lato font-normal text-[16px] text_black cursor-pointer hover:text-primary_green leading-[19.2px]">
             <a href={nav.id}>{nav.title}</a>
@@ -40,13 +43,34 @@ function Navbar() {
         </form>
       </ul>
 
-      <div className=" flex justify-end px-3 cursor-pointer items-center">
-        <img className=" object-contain ml-4" src={cart} alt="cart" />
-        <img className="  object-contain ml-4" src={menu} alt="menu" />
-        <img className="  object-contain ml-4" src={login} alt="login" />
+      <div className=" md:hidden flex justify-end items-center">
+        <img
+          src={toggle ? close : menu}
+          alt="menu"
+          onClick={() => setToggle((prev) => !prev)}
+        />
       </div>
 
-      <div className=" absolute w-[1080px] h-[1px] bg-primary_green bottom-0  left-20 mt-7"></div>
+      <div
+        className={`${
+          toggle ? 'flex' : 'hidden'
+        }  absolute  right-0 overflow-auto top-20 w-[100%]    mx-4 my-2 min-w-[140px] rounded-xl `}
+      >
+        <ul className=" flex-1 flex  md:hidden  flex-col ease duration-1000 justify-center items-center ">
+          {navLinks.map((nav) => (
+            <li className=" mr-4 font-lato font-normal mb-4 text-[16px] text_black cursor-pointer hover:text-primary_green leading-[19.2px]">
+              <a href={nav.id}>{nav.title}</a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div className=" px-3 cursor-pointer  items-center md:flex hidden">
+        <img className=" object-contain ml-4" src={cart} alt="cart" />
+        <img className=" object-contain ml-4" src={menu} alt="menu" />
+
+        <img className="  object-contain ml-4" src={login} alt="login" />
+      </div>
     </nav>
   );
 }
