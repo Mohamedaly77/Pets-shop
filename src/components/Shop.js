@@ -13,11 +13,21 @@ function Shop() {
           dog boutique!
         </p>
       </div>
-      <div className=" flex  md:flex-row flex-col sm:mb-20 mb-6 mt-10  my-5 flex-wrap ">
+      <div className=" flex  md:flex-row flex-col sm:mb-20 mb-6 mt-10  my-5 flex-wrap">
         {images.map((image) => (
-          <div className=" flex flex-1   justify-center items-center cards rounded-full  flex-row md:my-0 my-10 ">
-            <img src={image.img} alt="pets" className=" mr-5" />
-            <h4 className=" font-poppins text-[24px]">{image.title}</h4>
+          <div className=" container  flex-1  cards rounded-full  flex justify-center items-center md:my-0 my-10  relative overflow-hidden ">
+            <img
+              src={image.img}
+              alt="pets"
+              className=" mr-5 block object-cover object-center "
+            />
+            <div className="overlay  ">
+              <div className="content">
+                <h4 className="font-poppins inset-0 font absolute   text-center text-[24px] ">
+                  {image.title}
+                </h4>
+              </div>
+            </div>
           </div>
         ))}
       </div>
