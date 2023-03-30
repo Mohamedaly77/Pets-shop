@@ -16,7 +16,7 @@ const breakPoints = [
 
 function Petprice() {
   return (
-    <div className={`mt-10 ${styles.paddingY}`}>
+    <div id="menu" className={`mt-10 ${styles.paddingY}`}>
       <div className=" w-full text-center">
         <h1 className=" font-poppins font-bold text-[32px]">All Pet</h1>
         <p className=" font-lato text-[16px] font-normal">

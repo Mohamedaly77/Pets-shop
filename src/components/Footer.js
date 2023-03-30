@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from '../Style';
 import { footerLinks } from '../constants';
+import buttons from '../pets assets/buttons.svg';
 
 function Footer() {
   return (
@@ -22,6 +23,11 @@ function Footer() {
             </ul>
           </div>
         ))}
+      </div>
+      <div className=" w-full flex justify-end mb-10 mr-[50px] px-10 cursor-pointer">
+        <button>
+          <img src={buttons} alt="buttons" />
+        </button>
       </div>
       <div className={`flex border-t-[1px] ${styles.paddingX} items-center `}>
         <div className=" flex justify-between  w-full mt-3 text-grey3 md:flex-row flex-col md:my-3 my-5">

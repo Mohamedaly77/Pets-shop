@@ -3,7 +3,7 @@ import { images } from '../constants';
 
 function Shop() {
   return (
-    <div className="mt-10 md:px-3 px-5 ">
+    <div className="mt-10 md:px-3 px-5 " id="shop">
       <div className=" flex justify-center  w-full text-center flex-col  ">
         <h1 className=" font-poppins text-[32px] font-normal w-full  ">
           Shop By Pet

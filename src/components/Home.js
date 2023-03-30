@@ -1,6 +1,5 @@
 import React from 'react';
-import footprint from '../pets assets/foot print.svg';
-import background from '../pets assets/bg photo.svg';
+
 import style from '../Style';
 import facebook from '../pets assets/facebook.svg';
 import twitter from '../pets assets/twitter.svg';
@@ -12,7 +11,10 @@ import hav from '../pets assets/havanes dog.svg';
 
 function Home() {
   return (
-    <section className={`${style.paddingX} ${style.paddingY} mt-7 mb-10`}>
+    <section
+      id="Home"
+      className={`${style.paddingX} ${style.paddingY} mt-7 mb-10`}
+    >
       {/* <div className=" flex justify-between items-center  z-0">
         <img src={footprint} alt="footprint" />
         <img src={background} alt="background" />
