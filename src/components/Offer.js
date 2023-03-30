@@ -10,11 +10,11 @@ function Offer() {
       <div
         className={`${styles.flexCenter} ${styles.paddingX}  ${styles.paddingY}flex justify-between bottom-9  black md:flex-row flex-col border-b-[1px]`}
       >
-        <div className="  flex flex-col l ">
-          <h1 className=" font-red_hat md:text-[150px] text-[130px] font-bold text  ">
+        <div className="  flex flex-col l">
+          <h1 className=" font-red_hat md:text-[150px] text-[130px] font-bold text md:px-0 px-5  ">
             Pucci
           </h1>
-          <h1 className=" font-red_hat  md:text-[150px] text-[130px] font-bold mart ">
+          <h1 className=" font-red_hat  md:text-[150px] text-[130px] font-bold mart md:px-0 px-5">
             MART
           </h1>
           <img src={stars} alt="stars" />

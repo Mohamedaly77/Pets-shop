@@ -293,6 +293,10 @@ export const footerLinks = [
         name: 'Email Us: ghorerbazarbd.com@gmail.com',
         link: 'https://www.hoobank.com/become-a-partner/',
       },
+      {
+        button: buttons,
+        link: 'https://www.hoobank.com/become-a-partner/',
+      },
     ],
   },
 ];

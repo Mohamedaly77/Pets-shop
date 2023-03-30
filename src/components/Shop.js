@@ -15,7 +15,7 @@ function Shop() {
       </div>
       <div className=" flex  md:flex-row flex-col sm:mb-20 mb-6 mt-10  my-5 flex-wrap">
         {images.map((image) => (
-          <div className=" container  flex-1  cards rounded-full  flex justify-center items-center md:my-0 my-10  relative overflow-hidden ">
+          <div className=" container  flex-1  cards rounded-full  hover:scale-150 flex justify-center items-center md:my-0 my-10  relative overflow-hidden ">
             <img
               src={image.img}
               alt="pets"

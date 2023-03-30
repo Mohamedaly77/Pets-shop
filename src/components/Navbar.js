@@ -54,11 +54,11 @@ function Navbar() {
       <div
         className={`${
           toggle ? 'flex' : 'hidden'
-        }  absolute  right-0 overflow-auto top-20 w-[100%]    mx-4 my-2 min-w-[140px] rounded-xl `}
+        }  absolute  right-0 overflow-auto w-full top-20 mx-4 my-2  text-text_white rounded-xl bg-primary_green   `}
       >
-        <ul className=" flex-1 flex  md:hidden  flex-col ease duration-1000 justify-center items-center ">
+        <ul className=" flex-1 flex  md:hidden md:text-xl  text-[20px]  flex-col  ease duration-1000 md:justify-centre justify-start  items-center my-4 ">
           {navLinks.map((nav) => (
-            <li className=" mr-4 font-lato font-normal mb-4 text-[16px] text_black cursor-pointer hover:text-primary_green leading-[19.2px]">
+            <li className=" mr-4 font-lato font-normal mb-6 text-start text_black cursor-pointer hover:text-primary_green leading-[19.2px]">
               <a href={nav.id}>{nav.title}</a>
             </li>
           ))}
