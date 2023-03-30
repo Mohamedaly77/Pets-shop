@@ -23,8 +23,8 @@ function Footer() {
           </div>
         ))}
       </div>
-      <div className={`flex border-t-[1px] ${styles.paddingX}  `}>
-        <div className=" flex justify-between w-full mt-3 text-grey3 md:flex-row flex-col md:my-0 my-5">
+      <div className={`flex border-t-[1px] ${styles.paddingX} items-center `}>
+        <div className=" flex justify-between  w-full mt-3 text-grey3 md:flex-row flex-col md:my-3 my-5">
           <p>All rights reserved@Puccimart</p>
           <p>Terms and Condition</p>
         </div>
